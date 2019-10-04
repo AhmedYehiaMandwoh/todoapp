@@ -1,0 +1,52 @@
+
+#todolist-main{
+    margin-top: 80px;
+}
+#todolist-main .message .alert-danger{
+    padding: 20px;
+    font-size: 18px;
+}
+.page-header{
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+    color: #3fa868;
+    position: relative
+    
+}
+
+.btn-dark {
+    color: #3fa868;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 40px;
+    border-color: #3fa868;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 2px;
+    margin-top: 30px;  
+    text-transform: uppercase;
+}
+.btn-dark:hover{
+    background-color: #3fa868;
+    color: rgb(240, 235, 235)
+
+}
+.btn-dark:focus
+ {
+    box-shadow: none;
+}
+.btn-dark:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-dark:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle {
+    color: #676363;
+    background-color: #f8f9fa;
+    border-color: rgb(199, 196, 196);
+} 

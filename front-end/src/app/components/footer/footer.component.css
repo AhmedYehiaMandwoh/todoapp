@@ -1,0 +1,15 @@
+/* Footer */
+#footer{
+    background-color: rgb(57, 34, 34);
+    color: #a59c9c;
+    margin-top: 50px;
+}
+.footer{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+    opacity: 0.8;
+    text-align: center
+    
+}

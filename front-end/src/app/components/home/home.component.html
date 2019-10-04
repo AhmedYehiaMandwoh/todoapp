@@ -1,0 +1,56 @@
+<section id="todolist-main" *ngIf="!this.currentUser">
+  <div class="container wow BounceInDown">
+    <div class="row">
+      <div class="col">
+          <h2 class="page-header text-center">Todo List</h2>
+        
+      </div>
+ 
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-3">
+            <div class="message text-center">
+                <p class="alert alert-danger">You are not authorized to view this content !</p>
+                <button class="btn btn-dark" routerLink="/login">Login</button>
+
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+<section id="todolist" *ngIf="this.currentUser">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="page text-center">
+          <div class="pull-right mb-2">
+            <a routerLink="/addTodo" class="btn btn-dark">Add Todo</a>
+          </div>
+        </div>
+        
+        <table class="table table-striped ">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Todo Name</th>
+              <th>Compeleted</th>
+              <th>Actions</th>
+        
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let todo of todos; index as i">  
+              <td>{{i + 1}}</td>
+              <td>{{todo.name}}</td>
+              <td>{{todo.done}}</td>
+              <td>
+                <button (click)="deleteTask(todo._id)" class="btn btn-dark mr-2">Delete</button>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
